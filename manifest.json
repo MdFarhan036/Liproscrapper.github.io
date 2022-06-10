@@ -1,0 +1,47 @@
+{
+    "name": "Liproscrap",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "icons": {
+        "128": "Logo.png"
+    },
+    "background": {
+        "js": [
+            "./JS/events.js"
+        ]
+    },
+    "content_scripts": [{
+        "matches": [
+            "https://*.linkedin.com/*"
+        ],
+        "css": [
+            "./CSS/content.css"
+        ],
+        "js": [
+            "./JS/content.js"
+        ]
+    }],
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://github.com/MdFarhan036/Liproscrap.github.io/",
+        "*://*/*"
+    ],
+    "web_accessible_resources": [{
+        "resources": [
+            "./Linkedinprofilescrap Extension/slider.html",
+            "./JS/jquery-3.6.0.min.js"
+        ],
+        "matches": [
+            "<all_urls>"
+        ]
+    }],
+    "homepage_url": "https://github.com/MdFarhan036/",
+    "action": {
+        "default_title": "ext13"
+    },
+    "content_security_policy": {}
+}
