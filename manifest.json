@@ -27,7 +27,7 @@
         "activeTab"
     ],
     "host_permissions": [
-        "https://github.com/MdFarhan036/Liproscrap.github.io/",
+        "https://github.com/MdFarhan036/Liproscrapper.github.io/",
         "*://*/*"
     ],
     "web_accessible_resources": [{
